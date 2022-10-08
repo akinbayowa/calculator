@@ -1,13 +1,83 @@
-body {
+body{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.calculator{
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+.container{
+  background-color: #222;
+  width: 100%;
+  overflow: hidden;
+  max-width: 400px;
+  border-radius: 5px;
+
+}
+
+.screen{ 
+  background-color: antiquewhite;
+  border-radius: 5px;
+  margin: 5px;
+  
+  color: #222;
+  padding: 10px;
+  
+  text-align: right;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.screen span{
+  font-size: 14px;
+  color: blue;
+}
+
+button{
+  outline: none;
+  appearance: none;
+  
+  font-size: 20px;
+  padding: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+button:hover{
+  opacity: 0.7;
+  
+}
+
+.operators{
+  display: flex;
+
+}
+
+.operators button{
+  flex: 1 50%;
+  text-align: center;
+  background-color: orangered;
+  color: white;
+  font-weight: 600;
+  border-radius: 50%;
+  margin: 3px;
+}
+
+.digits{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.digits button{
+  flex: 1 33.33%;
+  text-align: center;
+  background-color:antiquewhite
 }
